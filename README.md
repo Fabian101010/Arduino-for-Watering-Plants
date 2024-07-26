@@ -1,2 +1,6 @@
 # Arduino-for-Watering-Plants
 This Project was created to water my plants while I am on holiday. It uses one arduino nano every, 2 relays, 2 pumps and 2 moisture sensors, in order to pump water from one pot to another plant pot.
+
+After a few years break from arduino mostly due to enrolling in a university degree, I decided to create a plant pot that waters the plants automatically (or by the press of a button). Although I know that its a pretty basic project, it was good to get back into arduino and a great introduction to low power design (I also learned that the nano every was a less-than-ideal choice for this project). All of the electronics fit onto the water pot, except the soil moisture sensors ofc. The pumps are submerged inside the water pot.
+
+All of the pins are defined in the code... otherwise the schematics are pretty simple. Everything is powered by a power module, I soldered a barrel jack connector to a 6x 1.5v battery holder. One power rail powers the arduino, the relays and the sensors, the other rail is used only for the pumps. The button connects to ground and pin 2, it uses the internal pullup resistor. Button code is could use debouncing, i noticed that it activates sometimes without being pressed
